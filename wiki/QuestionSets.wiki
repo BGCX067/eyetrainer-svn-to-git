@@ -1,0 +1,32 @@
+#labels Phase-Design
+# a Questionset is a folder that contains items that i say above :
+
+  * *set.xml :* an xml file that contains questions and answers
+  * *set.xml.md5 :" that file contains md5sum of set.xml (which is used for looking for updates)
+  * *image files :* image files (png, gif, jpeg etc) that indicated in set.xml
+
+== Content of set.xml ==
+
+Example code : 
+
+{{{
+<questionset name = "Sinema">
+	<image file="heathladger.jpg">
+		<question lang = "tr" string = "Bu hangi filmden alınmış bir karedir?" answer = "Batman Karaşovalye" />
+		<question lang = "tr" string = "Oyuncunun adı nedir?" answer = "Heath Ladger" />
+	</image>
+
+	<image file="losclimas.jpg">
+		<question lang = "tr" string = "Afişi gözüken filmin adı nedir?" answer = "Los Climas (İklimler)" />
+		<question lang = "tr" string = "Afişi gözüken filmin yönetmeni kimdir?" answer = "Nuri Bilge Ceylan" />
+		<question lang = "tr" string = "Fotoğrafta kaç tane ev gözükmektedir?" answer = "İki" />
+	</image>
+</questionset>
+
+}}}
+
+=== Details of Tags ===
+
+  * * questionset : *  means this is our question set. You can see that there is a name parameter which declares the name of question set.
+  * * image : * guess it :P it is image file which we are asking questions about
+  * * question : * it contains question string and answer string. As you thought lang paramater is used for language a questionset can have questions in different languages. questionset parser is selecting questions which is same as systems language.

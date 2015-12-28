@@ -1,0 +1,18 @@
+#labels Phase-Requirements
+# predicted development story
+
+Version 0.1
+
+  * Works on linux
+  * Works with one question set
+  * No translations
+
+Version 0.3
+
+  * Works on linux and Windows
+  * Works with multiple question sets
+
+Version 0.5
+
+  * Question sets are downloaded and updated automatically
+
